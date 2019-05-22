@@ -1,1 +1,56 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads latest Adobe Creative Cloud installer and imports it into munki.</string>
+	<key>Identifier</key>
+	<string>com.github.marcelpogorzelski.munki.AdobeCreativeCloudInstaller</string>
+	<key>Input</key>
+	<dict>
+		<key>DEFAULT_CATALOG</key>
+		<string>testing</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>NAME</key>
+		<string>Adobe Creative Cloud</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>%DEFAULT_CATALOG%</string>
+			</array>
+			<key>category</key>
+			<string>Productivity</string>
+			<key>description</key>
+			<string>Creative Cloud for desktop is a great place to start any creative project. Quickly launch and update your desktop apps; manage and share your assets stored in Creative Cloud; download fonts from Adobe Typekit or high-quality royalty-free assets right within the app; and showcase and discover creative work on Behance.</string>
+			<key>developer</key>
+			<string>Adobe</string>
+			<key>display_name</key>
+			<string>Adobe Creative Cloud Desktop Application</string>
+			<key>minimum_os_version</key>
+			<string>10.12.0</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.marcelpogorzelski.pkg.AdobeCreativeCloudInstaller</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>repo_subdirectory</key>
+				<string>%MUNKI_REPO_SUBDIR%</string>
+			</dict>
+			<key>Processor</key>
+			<string>MunkiImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
