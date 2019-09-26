@@ -15,17 +15,17 @@
 		<key>GROUP_NAME</key>
 		<string>%NAME%-update-smart</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>CFBundleVersionSmartGroupTemplate.xml</string>
+		<string>%RECIPE_DIR%/CFBundleVersionSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>Clue</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Testing</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>PolicyTemplate.xml</string>
+		<string>%RECIPE_DIR%/PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Clue is a tool that creates super-fast memory tests on screenshots of webpages, then lets you see the results. It's perfect for capturing that all-important first impression of a webpage.</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>%NAME%.png</string>
+		<string>%RECIPE_DIR%/%NAME%.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -42,7 +42,7 @@
 				<array>
 					<dict>
 						<key>ext_attribute_path</key>
-						<string>CFBundleVersionExtensionAttribute.xml</string>
+						<string>%RECIPE_DIR%/CFBundleVersionExtensionAttribute.xml</string>
 					</dict>
 				</array>
 				<key>groups</key>
