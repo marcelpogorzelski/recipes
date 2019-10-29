@@ -8,8 +8,6 @@
         <string>com.github.marcelpogorzelski.jss.Firefox</string>
         <key>Input</key>
         <dict>
-            <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
-            <false/>
             <key>NAME</key>
             <string>Firefox</string>
             <key>CATEGORY</key>
