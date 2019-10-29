@@ -8,8 +8,6 @@
         <string>com.github.marcelpogorzelski.jss.MicrosoftAutoUpdate</string>
         <key>Input</key>
         <dict>
-            <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
-            <false/>
             <key>NAME</key>
             <string>Microsoft AutoUpdate</string>
             <key>CATEGORY</key>
