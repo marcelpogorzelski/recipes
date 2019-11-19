@@ -27,7 +27,7 @@
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Microsoft Word is a popular and powerful word processing app.</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>Microsoft Word.png</string>
+		<string>MicrosoftWord365.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.2</string>
