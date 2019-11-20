@@ -19,7 +19,7 @@
 		<key>GROUP_TEMPLATE</key>
 		<string>MicrosoftSmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>SkypeforBusiness</string>
+		<string>SkypeForBusiness</string>
 		<key>OS_REQUIREMENTS</key>
 		<string>10.15.x,10.14.x,10.13.x,10.12.x</string>
 		<key>POLICY_CATEGORY</key>
@@ -29,7 +29,7 @@
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Microsoft Word is a popular and powerful word processing app.</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>MicrosoftSkypeforBusiness.png</string>
+		<string>MicrosoftSkypeForBusiness.png</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.2</string>
