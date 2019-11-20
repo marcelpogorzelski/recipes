@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest Word 2019 multilingual update pkg,
-		and appends the version to the end of the filename.
-		Then, uploads to the JSS.</string>
+	<string>Downloads the latest version of Microsoft's Skype for Business installer and imports it into your JSS.</string>
 	<key>Identifier</key>
 	<string>com.github.marcelpogorzelski.jss.SkypeForBusiness</string>
 	<key>Input</key>
@@ -27,7 +25,7 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>PolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Microsoft Word is a popular and powerful word processing app.</string>
+		<string>Skype for Business is an instant-messaging client used with Skype for Business Server or with Skype for Business Online (available with Microsoft Office 365)</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>MicrosoftSkypeForBusiness.png</string>
 	</dict>
