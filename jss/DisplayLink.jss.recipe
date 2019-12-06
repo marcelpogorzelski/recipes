@@ -66,6 +66,8 @@
         </array>
 				<key>os_requirements</key>
 				<string>%OS_REQUIREMENTS%</string>
+        <key>package_reboot</key>
+        <string>%PACKAGE_REBOOT%</string>
 				<key>policy_category</key>
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>
