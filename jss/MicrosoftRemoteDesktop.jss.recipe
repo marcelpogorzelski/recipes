@@ -9,19 +9,21 @@
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Apps</string>
+		<string>Microsoft</string>
     <key>PROD_NAME</key>
 		<string>Microsoft Remote Desktop</string>
 		<key>GROUP_NAME</key>
-		<string>%NAME%-update-smart</string>
+		<string>UiT-Ansattemaskiner</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>SmartGroupTemplate.xml</string>
+		<string>OUSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>MicrosoftRemoteDesktop</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Testing</string>
+		<string>Microsoft</string>
+		<key>CUSTOM_TRIGGER</key>
+		<string>install-microsoftremotedesktop</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>PolicyTemplate.xml</string>
+		<string>TriggerPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Use Microsoft Remote Desktop app to connect to a remote PC or virtual apps and desktops made available by your administrator.</string>
 		<key>SELF_SERVICE_ICON</key>
