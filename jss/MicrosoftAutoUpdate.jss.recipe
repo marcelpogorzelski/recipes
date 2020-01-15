@@ -17,7 +17,7 @@
 		<key>GROUP_NAME</key>
 		<string>UiT-Ansattemaskiner</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>AnsatteMaskinerSmartGroupTemplate.xml</string>
+		<string>OUSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>MicrosoftAutoUpdate</string>
 		<key>OS_REQUIREMENTS</key>
