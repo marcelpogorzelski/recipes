@@ -13,15 +13,17 @@
     <key>PROD_NAME</key>
 		<string>OneDrive</string>
 		<key>GROUP_NAME</key>
-		<string>%NAME%-update-smart</string>
+		<string>UiT-Ansattemaskiner</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>SmartGroupTemplate.xml</string>
+		<string>OUSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>OneDrive</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Testing</string>
+		<string>Microsoft</string>
+		<key>CUSTOM_TRIGGER</key>
+		<string>install-onedrive</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>PolicyTemplate.xml</string>
+		<string>TriggerPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Get to your files from anywhere, on any device, with Microsoft OneDrive. Share and work together with anyone in your work and life. With OneDrive for Business, you also get storage for your work files so you can share and collaborate on them with other people at your work or school/university. The OneDrive app for Mac makes it easy to work with your OneDrive files on your Mac.</string>
 		<key>SELF_SERVICE_ICON</key>
