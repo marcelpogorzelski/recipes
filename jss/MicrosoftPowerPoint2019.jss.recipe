@@ -11,21 +11,23 @@
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Productivity</string>
+		<string>Microsoft</string>
     <key>PROD_NAME</key>
 		<string>Microsoft PowerPoint</string>
 		<key>GROUP_NAME</key>
-		<string>%NAME%-update-smart</string>
+		<string>UiT-Ansattemaskiner</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>MicrosoftSmartGroupTemplate.xml</string>
+		<string>OUSmartGroupTemplate.xml</string>
 		<key>NAME</key>
 		<string>MicrosoftPowerPoint</string>
 		<key>OS_REQUIREMENTS</key>
 		<string>10.15.x,10.14.x,10.13.x,10.12.x</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Testing</string>
+		<string>Microsoft</string>
+		<key>CUSTOM_TRIGGER</key>
+		<string>install-powerpoint</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>PolicyTemplate.xml</string>
+		<string>TriggerPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Microsoft PowerPoint allows the creation and presentation of professional slide decks.</string>
 		<key>SELF_SERVICE_ICON</key>
