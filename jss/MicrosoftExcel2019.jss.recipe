@@ -23,7 +23,7 @@
 		<key>OS_REQUIREMENTS</key>
 		<string>10.15.x,10.14.x,10.13.x,10.12.x</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Testing</string>
+		<string>Microsoft</string>
 		<key>CUSTOM_TRIGGER</key>
 		<string>install-excel</string>
 		<key>POLICY_TEMPLATE</key>
