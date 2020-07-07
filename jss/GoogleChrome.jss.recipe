@@ -23,9 +23,9 @@
             <key>CUSTOM_TRIGGER</key>
         		<string>install-chrome</string>
             <key>POLICY_TEMPLATE</key>
-            <string>%RECIPE_DIR%/TriggerPolicyTemplate.xml</string>
+            <string>TriggerPolicyTemplate.xml</string>
             <key>ICON</key>
-            <string>%RECIPE_DIR%/GoogleChrome.png</string>
+            <string>GoogleChrome.png</string>
             <key>DESCRIPTION</key>
             <string>Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</string>
         </dict>
