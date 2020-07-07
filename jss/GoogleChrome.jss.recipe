@@ -29,7 +29,7 @@
             <key>GROUP_NAME</key>
             <string>UiT-Ansattemaskiner</string>
             <key>GROUP_TEMPLATE</key>
-            <string>%RECIPE_DIR%/OUSmartGroupTemplate.xml</string>
+            <string>%RECIPE_DIR%/UitGroupTemplate.xml</string>
             <key>DESCRIPTION</key>
             <string>Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</string>
         </dict>
@@ -60,7 +60,11 @@
                     <array>
                         <dict>
                             <key>name</key>
-                            <string>Testing Environment</string>
+                            <string>UiT-Datalabmaskiner</string>
+                            <key>smart</key>
+                            <true/>
+                            <key>template_path</key>
+                            <string>%GROUP_TEMPLATE%</string>
                         </dict>
                         <dict>
                             <key>name</key>
