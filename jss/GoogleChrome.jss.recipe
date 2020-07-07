@@ -62,6 +62,14 @@
                             <key>template_path</key>
                             <string>UitGroupTemplate.xml</string>
                         </dict>
+                        <dict>
+                            <key>name</key>
+                            <string>UiT-Testmaskiner</string>
+                            <key>smart</key>
+                            <true/>
+                            <key>template_path</key>
+                            <string>UitGroupTemplate.xml</string>
+                        </dict>
                     </array>
                 </dict>
                 <key>Processor</key>
