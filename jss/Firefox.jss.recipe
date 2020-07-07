@@ -13,15 +13,11 @@
             <key>CATEGORY</key>
             <string>Web Browsers and Internet Utilities</string>
             <key>POLICY_CATEGORY</key>
-            <string>Testing</string>
+            <string>Web Browsers and Internet Utilities</string>
             <key>POLICY_TEMPLATE</key>
             <string>%RECIPE_DIR%/PolicyTemplate.xml</string>
             <key>ICON</key>
             <string>%RECIPE_DIR%/Firefox.png</string>
-            <key>GROUP_TEMPLATE</key>
-            <string>%RECIPE_DIR%/SmartGroupTemplate.xml</string>
-            <key>GROUP_NAME</key>
-            <string>%NAME%-update-smart</string>
             <key>DESCRIPTION</key>
             <string>Web Browser.</string>
         </dict>
@@ -50,11 +46,27 @@
                     <array>
                         <dict>
                             <key>name</key>
-                            <string>Testing Environment</string>
+                            <string>UiT-Ansattemaskiner</string>
+                            <key>smart</key>
+                            <true/>
+                            <key>template_path</key>
+                            <string>UitGroupTemplate.xml</string>
                         </dict>
                         <dict>
                             <key>name</key>
-                            <string>10.14.5</string>
+                            <string>UiT-Datalabmaskiner</string>
+                            <key>smart</key>
+                            <true/>
+                            <key>template_path</key>
+                            <string>UitGroupTemplate.xml</string>
+                        </dict>
+                        <dict>
+                            <key>name</key>
+                            <string>UiT-Munkimaskiner</string>
+                            <key>smart</key>
+                            <true/>
+                            <key>template_path</key>
+                            <string>UitGroupTemplate.xml</string>
                         </dict>
                     </array>
                 </dict>
