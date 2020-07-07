@@ -14,8 +14,10 @@
             <string>Web Browsers and Internet Utilities</string>
             <key>POLICY_CATEGORY</key>
             <string>Web Browsers and Internet Utilities</string>
+            <key>CUSTOM_TRIGGER</key>
+        		<string>install-firefox</string>
             <key>POLICY_TEMPLATE</key>
-            <string>%RECIPE_DIR%/PolicyTemplate.xml</string>
+            <string>%RECIPE_DIR%/TriggerPolicyTemplate.xml</string>
             <key>ICON</key>
             <string>%RECIPE_DIR%/Firefox.png</string>
             <key>DESCRIPTION</key>
