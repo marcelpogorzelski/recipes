@@ -56,7 +56,7 @@
                     <array>
                         <dict>
                             <key>name</key>
-                            <string>UiT-Datalabmaskiner</string>
+                            <string>UiT-Ansattemaskiner</string>
                             <key>smart</key>
                             <true/>
                             <key>template_path</key>
@@ -64,7 +64,7 @@
                         </dict>
                         <dict>
                             <key>name</key>
-                            <string>UiT-Ansattemaskiner</string>
+                            <string>UiT-Datalabmaskiner</string>
                             <key>smart</key>
                             <true/>
                             <key>template_path</key>
