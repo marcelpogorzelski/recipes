@@ -26,10 +26,6 @@
             <string>%RECIPE_DIR%/TriggerPolicyTemplate.xml</string>
             <key>ICON</key>
             <string>%RECIPE_DIR%/GoogleChrome.png</string>
-            <key>GROUP_NAME</key>
-            <string>UiT-Ansattemaskiner</string>
-            <key>GROUP_TEMPLATE</key>
-            <string>%RECIPE_DIR%/UitGroupTemplate.xml</string>
             <key>DESCRIPTION</key>
             <string>Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</string>
         </dict>
@@ -64,7 +60,7 @@
                             <key>smart</key>
                             <true/>
                             <key>template_path</key>
-                            <string>%GROUP_TEMPLATE%</string>
+                            <string>UitGroupTemplate.xml</string>
                         </dict>
                         <dict>
                             <key>name</key>
