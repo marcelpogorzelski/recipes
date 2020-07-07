@@ -62,10 +62,6 @@
                             <key>template_path</key>
                             <string>UitGroupTemplate.xml</string>
                         </dict>
-                        <dict>
-                            <key>name</key>
-                            <string>10.14.5</string>
-                        </dict>
                     </array>
                 </dict>
                 <key>Processor</key>
