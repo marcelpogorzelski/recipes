@@ -50,11 +50,11 @@
                     <array>
                         <dict>
                             <key>name</key>
-                            <string>%GROUP_NAME%</string>
-                            <key>smart</key>
-                            <true/>
-                            <key>template_path</key>
-                            <string>%GROUP_TEMPLATE%</string>
+                            <string>Testing Environment</string>
+                        </dict>
+                        <dict>
+                            <key>name</key>
+                            <string>10.14.5</string>
                         </dict>
                     </array>
                 </dict>
