@@ -17,7 +17,7 @@
     <key>CUSTOM_TRIGGER</key>
     <string>install-zoom</string>
     <key>POLICY_TEMPLATE</key>
-    <string>TriggerPolicyTemplate.xml</string>
+    <string>ScopedTriggerPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
 		<key>SELF_SERVICE_ICON</key>
@@ -34,33 +34,6 @@
 			<dict>
 				<key>category</key>
 				<string>%CATEGORY%</string>
-				<key>groups</key>
-        <array>
-            <dict>
-                <key>name</key>
-                <string>UiT-Ansattemaskiner</string>
-                <key>smart</key>
-                <true/>
-                <key>template_path</key>
-                <string>UitGroupTemplate.xml</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>UiT-Datalabmaskiner</string>
-                <key>smart</key>
-                <true/>
-                <key>template_path</key>
-                <string>UitGroupTemplate.xml</string>
-            </dict>
-            <dict>
-                <key>name</key>
-                <string>UiT-Munkimaskiner</string>
-                <key>smart</key>
-                <true/>
-                <key>template_path</key>
-                <string>UitGroupTemplate.xml</string>
-            </dict>
-        </array>
 				<key>policy_category</key>
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>
