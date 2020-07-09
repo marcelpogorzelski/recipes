@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads NoMad Login AD, and builds a package and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.marcelpogorzelski.jss.NoMADLoginAD</string>
+	<string>com.github.marcelpogorzelski.jss.NoMADLogin-AD</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -24,7 +24,7 @@
 	<key>MinimumVersion</key>
 	<string>0.4.2</string>
 	<key>ParentRecipe</key>
-	<string>com.github.nstrauss.pkg.NoMADLoginAD</string>
+	<string>com.github.bochoven.recipes.download.NoMADLogin-AD</string>
 	<key>Process</key>
 	<array>
 		<dict>
