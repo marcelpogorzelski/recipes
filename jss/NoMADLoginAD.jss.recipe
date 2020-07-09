@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads NoMad Login AD, and builds a package and imports it into your JSS.</string>
+	<key>Identifier</key>
+	<string>com.github.marcelpogorzelski.jss.NoMADLoginAD</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Management Tools</string>
+    <key>PROD_NAME</key>
+		<string>NoMAD Login AD</string>
+		<key>NAME</key>
+		<string>NoMADLoginAD</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Management Tools</string>
+		<key>CUSTOM_TRIGGER</key>
+		<string>install-nomadLogin</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>ScopedTriggerPolicyNoSelfServiceTemplate.xml</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.4.2</string>
+	<key>ParentRecipe</key>
+	<string>com.github.nstrauss.pkg.NoMADLoginAD</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category</key>
+				<string>%CATEGORY%</string>
+				<key>policy_category</key>
+				<string>%POLICY_CATEGORY%</string>
+				<key>policy_template</key>
+				<string>%POLICY_TEMPLATE%</string>
+				<key>prod_name</key>
+				<string>%PROD_NAME%</string>
+			</dict>
+			<key>Processor</key>
+			<string>JSSImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
