@@ -24,7 +24,7 @@
 	<key>MinimumVersion</key>
 	<string>0.4.2</string>
 	<key>ParentRecipe</key>
-	<string>com.github.bochoven.recipes.download.NoMADLogin-AD</string>
+	<string>com.github.marcelpogorzelski.pkg.NoMADLoginAD</string>
 	<key>Process</key>
 	<array>
 		<dict>
