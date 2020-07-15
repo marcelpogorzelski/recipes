@@ -19,7 +19,7 @@
 		<key>CUSTOM_TRIGGER</key>
 		<string>install-microsoftremotedesktop</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>ScopedTriggerPolicyNoSelfServiceTemplate.xml</string>
+		<string>ScopedTriggerPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Use Microsoft Remote Desktop app to connect to a remote PC or virtual apps and desktops made available by your administrator.</string>
 		<key>SELF_SERVICE_ICON</key>
@@ -42,6 +42,10 @@
 				<string>%POLICY_TEMPLATE%</string>
 				<key>prod_name</key>
 				<string>%PROD_NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
 			</dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>

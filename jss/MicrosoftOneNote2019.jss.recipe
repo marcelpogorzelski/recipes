@@ -14,12 +14,14 @@
 		<string>Microsoft OneNote</string>
 		<key>NAME</key>
 		<string>MicrosoftOneNote</string>
+		<key>OS_REQUIREMENTS</key>
+		<string>10.15.x,10.14.x,10.13.x,10.12.x</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Microsoft</string>
 		<key>CUSTOM_TRIGGER</key>
 		<string>install-onenote</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>ScopedTriggerPolicyNoSelfServiceTemplate.xml</string>
+		<string>ScopedTriggerPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Microsoft OneNote allows free-form information gathering and multi-user collaboration. It gathers users' notes (handwritten or typed), drawings, screen clippings and audio commentaries.</string>
 		<key>SELF_SERVICE_ICON</key>
@@ -44,6 +46,10 @@
 				<string>%POLICY_TEMPLATE%</string>
 				<key>prod_name</key>
 				<string>%PROD_NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
 			</dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>

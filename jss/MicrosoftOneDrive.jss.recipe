@@ -19,7 +19,7 @@
 		<key>CUSTOM_TRIGGER</key>
 		<string>install-onedrive</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>ScopedTriggerPolicyNoSelfServiceTemplate.xml</string>
+		<string>ScopedTriggerPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Get to your files from anywhere, on any device, with Microsoft OneDrive. Share and work together with anyone in your work and life. With OneDrive for Business, you also get storage for your work files so you can share and collaborate on them with other people at your work or school/university. The OneDrive app for Mac makes it easy to work with your OneDrive files on your Mac.</string>
 		<key>SELF_SERVICE_ICON</key>
@@ -42,6 +42,10 @@
 				<string>%POLICY_TEMPLATE%</string>
 				<key>prod_name</key>
 				<string>%PROD_NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
 			</dict>
 			<key>Processor</key>
 			<string>JSSImporter</string>
