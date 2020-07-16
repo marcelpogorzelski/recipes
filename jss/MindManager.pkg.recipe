@@ -37,9 +37,9 @@
             <key>Arguments</key>
             <dict>
                 <key>source_path</key>
-                <string>%pathname%/Mindjet MindManager.app</string>
+                <string>%pathname%/MindManager.app</string>
                 <key>destination_path</key>
-                <string>%pkgroot%/Applications/Mindjet MindManager.app</string>
+                <string>%pkgroot%/Applications/MindManager.app</string>
             </dict>
         </dict>
         <dict>
