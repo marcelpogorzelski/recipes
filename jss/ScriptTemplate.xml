@@ -1,9 +1,9 @@
 <script>
-    <name>JSSImporterTestScript.sh</name>
-    <category>Testing</category>
-    <filename>JSSImporterTestScript.sh</filename>
+    <name>%SCRIPT_NAME%</name>
+    <category>%SCRIPT_CATEGORY%</category>
+    <filename>%SCRIPT_NAME%</filename>
     <info />
-    <notes />
+    <notes Created by jssimporter/>
     <priority>After</priority>
     <parameters />
     <os_requirements />
