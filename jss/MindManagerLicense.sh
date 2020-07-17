@@ -1,7 +1,7 @@
 #!/bin/sh
 
-VERSION=$(echo "%version%" | cut -d '.' -f1)
-LICENSEKEY="%LICENSEKEY%"
+VERSION="13"
+LICENSEKEY=""
 
 if [ "$LICENSEKEY" == "" ]; then exit 0; fi
 

@@ -3,7 +3,7 @@
     <category>%SCRIPT_CATEGORY%</category>
     <filename>%SCRIPT_NAME%</filename>
     <info />
-    <notes Created by jssimporter/>
+    <notes>Created by JSSImporter</notes>
     <priority>After</priority>
     <parameters />
     <os_requirements />

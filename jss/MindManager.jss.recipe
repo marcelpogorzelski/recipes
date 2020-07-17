@@ -19,7 +19,7 @@
 		<key>CUSTOM_TRIGGER</key>
 		<string>install-mindmanager</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>TriggerPolicyTemplate.xml</string>
+		<string>ScopedTriggerPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Digital mind mapping and data visualization.</string>
 		<key>SELF_SERVICE_ICON</key>
@@ -30,8 +30,6 @@
 		<string>ScriptTemplate.xml</string>
     <key>SCRIPT_CATEGORY</key>
 		<string>%POLICY_CATEGORY%</string>
-		<key>LICENSEKEY</key>
-		<string></string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.2</string>
