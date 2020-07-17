@@ -23,7 +23,7 @@
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Digital mind mapping and data visualization.</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>MicrosoftTeams.png</string>
+		<string>MindManager.png</string>
     <key>SCRIPT_NAME</key>
 		<string></string>
     <key>SCRIPT_TEMPLATE</key>
