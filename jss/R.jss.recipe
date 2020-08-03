@@ -44,8 +44,6 @@
                     <string>%ICON%</string>
                     <key>self_service_description</key>
                     <string>%DESCRIPTION%</string>
-                    <key>version</key>
-                    <string>%r_version%</string>
                 </dict>
                 <key>Processor</key>
                 <string>JSSImporter</string>
