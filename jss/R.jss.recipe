@@ -11,9 +11,9 @@
             <key>NAME</key>
             <string>R for Mac</string>
             <key>CATEGORY</key>
-            <string>Productivity</string>
+            <string>Development</string>
             <key>POLICY_CATEGORY</key>
-            <string>Productivity</string>
+            <string>Development</string>
             <key>CUSTOM_TRIGGER</key>
         		<string>install-r</string>
             <key>POLICY_TEMPLATE</key>
