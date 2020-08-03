@@ -26,13 +26,26 @@
 				<string>(?P&lt;r_filename&gt;R-(?P&lt;r_version&gt;[0-9\.]+)\.pkg)</string>
 			</dict>
 		</dict>
+        <dict>
+			<key>Processor</key>
+			<string>URLTextSearcher</string>
+			<key>Arguments</key>
+			<dict>
+				<key>url</key>
+				<string>https://cloud.r-project.org/bin/macosx/</string>
+				<key>re_pattern</key>
+				<string>(?P&lt;r_filename&gt;R-(?P&lt;r_version&gt;[0-9\.]+)\.pkg)</string>
+                <key>result_output_var_name</key>
+                <string>r_version</string>
+			</dict>
+		</dict>
 		<dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
 			<key>Arguments</key>
 			<dict>
 				<key>url</key>
-				<string>https://cloud.r-project.org/bin/macosx/%r_filename%</string>
+				<string>https://cloud.r-project.org/bin/macosx/%r_version%.pkg</string>
 			</dict>
 		</dict>
 		<dict>
