@@ -44,6 +44,8 @@
                     <string>%ICON%</string>
                     <key>self_service_description</key>
                     <string>%DESCRIPTION%</string>
+                    <key>pkg_path</key>
+				    <string>%pathname%</string>
                     <key>version</key>
 				    <string>%version%</string>
                 </dict>
