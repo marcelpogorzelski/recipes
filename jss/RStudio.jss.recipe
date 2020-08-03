@@ -10,20 +10,16 @@
         <dict>
             <key>NAME</key>
             <string>RStudio</string>
-            <key>JSS_INVENTORY_NAME</key>
-            <string>RStudio.app</string>
             <key>CATEGORY</key>
             <string>Development</string>
             <key>POLICY_CATEGORY</key>
-            <string>Testing</string>
+            <string>Development</string>
+            <key>CUSTOM_TRIGGER</key>
+        	<string>install-rstudio</string>
             <key>POLICY_TEMPLATE</key>
-            <string>%RECIPE_DIR%/PolicyTemplate.xml</string>
+            <string>ScopedTriggerPolicyTemplate.xml</string>
             <key>ICON</key>
-            <string>%RECIPE_DIR%/RStudio.png</string>
-            <key>GROUP_NAME</key>
-            <string>%NAME%-update-smart</string>
-            <key>GROUP_TEMPLATE</key>
-            <string>%RECIPE_DIR%/SmartGroupTemplate.xml</string>
+            <string>RStudio.png</string>
             <key>DESCRIPTION</key>
             <string>RStudio IDE is a powerful and productive user interface for R.</string>
         </dict>
@@ -40,8 +36,6 @@
                     <string>%version%</string>
                     <key>prod_name</key>
                     <string>%NAME%</string>
-                    <key>jss_inventory_name</key>
-                    <string>%JSS_INVENTORY_NAME%</string>
                     <key>category</key>
                     <string>%CATEGORY%</string>
                     <key>policy_category</key>
@@ -52,17 +46,6 @@
                     <string>%ICON%</string>
                     <key>self_service_description</key>
                     <string>%DESCRIPTION%</string>
-                    <key>groups</key>
-                    <array>
-                        <dict>
-                            <key>name</key>
-                            <string>%GROUP_NAME%</string>
-                            <key>smart</key>
-                            <true/>
-                            <key>template_path</key>
-                            <string>%GROUP_TEMPLATE%</string>
-                        </dict>
-                    </array>
                 </dict>
                 <key>Processor</key>
                 <string>JSSImporter</string>
