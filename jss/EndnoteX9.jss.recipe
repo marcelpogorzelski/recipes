@@ -41,7 +41,7 @@
 				<key>category</key>
 				<string>%CATEGORY%</string>
 				<key>pkg_path</key>
-				<string>%pathname%</string>
+				<string>%pkg_path%</string>
 				<key>policy_category</key>
 				<string>%POLICY_CATEGORY%</string>
 				<key>policy_template</key>
