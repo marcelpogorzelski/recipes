@@ -16,23 +16,6 @@
     <key>Process</key>
     <array>
     	<dict>
-        	<key>Processor</key>
-            <string>URLTextSearcher</string>
-            <key>Arguments</key>
-            <dict>
-                <key>url</key>
-                <string>https://www.mindmanager.com/mm-mac-dmg</string>
-                <key>curl_opts</key>
-                <array>
-                    <string>-I</string>
-                </array>
-                <key>re_pattern</key>
-                <string>MindManager_Mac_([0-9]+.[0-9]+.[0-9]+)</string>
-                <key>result_output_var_name</key>
-                <string>version</string>
-            </dict>
-        </dict>
-    	<dict>
             <key>Processor</key>
             <string>URLDownloader</string>
             <key>Arguments</key>
