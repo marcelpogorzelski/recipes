@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads MindManger disk image, and builds a package and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>com.github.marcelpogorzelski.jss.MindManger</string>
+	<string>com.github.marcelpogorzelski.jss.MindManager</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -34,7 +34,7 @@
 	<key>MinimumVersion</key>
 	<string>0.4.2</string>
 	<key>ParentRecipe</key>
-	<string>com.github.marcelpogorzelski.pkg.MindManger</string>
+	<string>com.github.marcelpogorzelski.pkg.MindManager</string>
 	<key>Process</key>
 	<array>
 		<dict>
