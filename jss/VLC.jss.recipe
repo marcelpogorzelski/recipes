@@ -26,7 +26,7 @@
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.marcelpogorzelski.pkg.VLC</string>
+	<string>com.github.autopkg.pkg.VLC</string>
 	<key>Process</key>
 	<array>
 		<dict>
