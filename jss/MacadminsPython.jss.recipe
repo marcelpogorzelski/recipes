@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Description</key>
+        <string>Adds the most recent (pre-)release signed pkg installer of macadmins/python (“Recommended” build) from GitHub to jss.</string>
+        <key>Identifier</key>
+        <string>com.github.marcelpogorzelski.jss.MacadminsPython</string>
+        <key>Input</key>
+        <dict>
+            <key>NAME</key>
+            <string>MacadminsPython</string>
+            <key>CATEGORY</key>
+            <string>Management Tools</string>
+            <key>POLICY_CATEGORY</key>
+            <string>Management Tools</string>
+            <key>CUSTOM_TRIGGER</key>
+        		<string>install-managedpython3</string>
+            <key>POLICY_TEMPLATE</key>
+            <string>ScopedTriggerPolicyNoSelfServiceTemplate.xml</string>
+        </dict>
+        <key>MinimumVersion</key>
+        <string>0.4.0</string>
+        <key>ParentRecipe</key>
+        <string>com.github.jazzace.download.MacadminsPython</string>
+        <key>Process</key>
+        <array>
+            <dict>
+                <key>Arguments</key>
+                <dict>
+                    <key>prod_name</key>
+                    <string>%NAME%</string>
+                    <key>category</key>
+                    <string>%CATEGORY%</string>
+                    <key>policy_category</key>
+                    <string>%POLICY_CATEGORY%</string>
+                    <key>policy_template</key>
+                    <string>%POLICY_TEMPLATE%</string>
+                </dict>
+                <key>Processor</key>
+                <string>JSSImporter</string>
+            </dict>
+        </array>
+    </dict>
+</plist>
