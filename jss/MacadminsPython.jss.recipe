@@ -36,6 +36,8 @@
                     <string>%POLICY_CATEGORY%</string>
                     <key>policy_template</key>
                     <string>%POLICY_TEMPLATE%</string>
+                    <key>pkg_path</key>
+                    <string>%pathname%</string>
                 </dict>
                 <key>Processor</key>
                 <string>JSSImporter</string>
