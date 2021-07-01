@@ -9,7 +9,7 @@
         <key>Input</key>
         <dict>
             <key>NAME</key>
-            <string>Microsoft Office 365 Business Pro Suite</string>
+            <string>Microsoft Defender ATP</string>
             <key>CATEGORY</key>
             <string>Security</string>
             <key>POLICY_CATEGORY</key>
