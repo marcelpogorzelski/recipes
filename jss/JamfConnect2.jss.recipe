@@ -11,7 +11,7 @@
             <key>NAME</key>
             <string>JamfConnect</string>
             <key>CATEGORY</key>
-            <string>Security</string>
+            <string>Jamf Connect</string>
         </dict>
         <key>MinimumVersion</key>
         <string>0.4.0</string>
