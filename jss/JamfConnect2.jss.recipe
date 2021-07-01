@@ -7,7 +7,12 @@
         <key>Identifier</key>
         <string>com.github.marcelpogorzelski.jss.JamfConnect2</string>
         <key>Input</key>
-        <dict/>
+        <dict>
+            <key>NAME</key>
+            <string>Microsoft Defender ATP</string>
+            <key>CATEGORY</key>
+            <string>Security</string>
+        </dict>
         <key>MinimumVersion</key>
         <string>0.4.0</string>
         <key>ParentRecipe</key>
@@ -16,7 +21,12 @@
         <array>
             <dict>
                 <key>Arguments</key>
-                <dict/>
+                <dict>
+                    <key>prod_name</key>
+                    <string>%NAME%</string>
+                    <key>category</key>
+                    <string>%CATEGORY%</string>
+                </dict>
                 <key>Processor</key>
                 <string>JSSImporter</string>
             </dict>
