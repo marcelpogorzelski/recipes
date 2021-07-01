@@ -9,7 +9,7 @@
         <key>Input</key>
         <dict>
             <key>NAME</key>
-            <string>Microsoft Defender ATP</string>
+            <string>Jamf Connect 2</string>
             <key>CATEGORY</key>
             <string>Security</string>
         </dict>
