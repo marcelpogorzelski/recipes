@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Packages Jamf Pro from the local Mac, and uploads it to the JSS.</string>
+	<key>Identifier</key>
+	<string>com.github.marcelpogorzelski.jss.JamfPro</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Management Tools</string>
+        <key>PROD_NAME</key>
+		<string>Jamf Pro</string>
+		<key>NAME</key>
+		<string>JamfPro</string>
+		<key>POLICY_CATEGORY</key>
+		<string>Management Tools</string>
+		<key>CUSTOM_TRIGGER</key>
+		<string>install-jamfpro</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>JamfProScopedTriggerPolicyTemplate.xml</string>
+		<key>SELF_SERVICE_DESCRIPTION</key>
+		<string>Install the latest version of %PROD_NAME%.</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>JamfPro.png</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.6.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.novaksam.pkg.JamfPro</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category</key>
+				<string>%CATEGORY%</string>
+				<key>policy_category</key>
+				<string>%POLICY_CATEGORY%</string>
+				<key>policy_template</key>
+				<string>%POLICY_TEMPLATE%</string>
+				<key>prod_name</key>
+				<string>%PROD_NAME%</string>
+				<key>self_service_description</key>
+				<string>%SELF_SERVICE_DESCRIPTION%</string>
+				<key>self_service_icon</key>
+				<string>%SELF_SERVICE_ICON%</string>
+			</dict>
+			<key>Processor</key>
+			<string>JSSImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
