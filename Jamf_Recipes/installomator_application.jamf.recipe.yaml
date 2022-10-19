@@ -1,0 +1,38 @@
+Identifier: no.uit.jamf.installomator_application
+MinimumVersion: '2.3'
+
+Input:
+  NAME: 'Google Chrome'
+  APPLICATION_NAME: '%NAME%.app'
+  PATCH_NAME: '%NAME%'
+  GROUP_NAME_PREFIX: 'Installomator - %NAME% -'
+  INSTALLOMATOR_INSTALLED_GROUP_NAME: '%GROUP_NAME_PREFIX% Installed'
+  INSTALLOMATOR_INSTALLED_GROUP_TEMPLATE: 'installomator_installed_group_template.xml'
+  INSTALLOMATOR_NOT_INSTALLED_GROUP_NAME: '%GROUP_NAME_PREFIX% Not Installed'
+  INSTALLOMATOR_NOT_INSTALLED_GROUP_TEMPLATE: 'installomator_not_installed_group_template.xml'
+  INSTALLOMATOR_OUT_OF_DATE_GROUP_NAME: '%GROUP_NAME_PREFIX% - Out of date'
+  INSTALLOMATOR_OUT_OF_DATE_GROUP_TEMPLATE: 'installomator_out_of_date_group_template.xml'
+  INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_NAME: '%GROUP_NAME_PREFIX% - Out of date - Scope'
+  INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_TEMPLATE: 'installomator_out_of_date_scope_group_template.xml'
+  
+
+Process:
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
+  Arguments:
+    computergroup_template: '%INSTALLOMATOR_INSTALLED_GROUP_TEMPLATE%'
+    computergroup_name: '%INSTALLOMATOR_INSTALLED_GROUP_NAME%'
+
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
+  Arguments:
+    computergroup_template: '%INSTALLOMATOR_NOT_INSTALLED_GROUP_TEMPLATE%'
+    computergroup_name: '%INSTALLOMATOR_NOT_INSTALLED_GROUP_NAME%'
+
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
+  Arguments:
+    computergroup_template: '%INSTALLOMATOR_OUT_OF_DATE_GROUP_TEMPLATE%'
+    computergroup_name: '%INSTALLOMATOR_OUT_OF_DATE_GROUP_NAME%'
+
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
+  Arguments:
+    computergroup_template: '%INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_TEMPLATE%'
+    computergroup_name: '%INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_NAME%'
