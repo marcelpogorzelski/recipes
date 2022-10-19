@@ -1,0 +1,13 @@
+Identifier: no.uit.jamf.testgroup
+MinimumVersion: '2.3'
+
+Input:
+  GROUP_NAME: 'AutoPkg Test Group'
+  GROUP_TEMPLATE: 'smart_group_template.xml'
+  INPUT_TEST: 'TEST VALUE' 
+
+Process:
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
+    Arguments:
+      computergroup_template: '%GROUP_TEMPLATE%'
+      computergroup_name: '%GROUP_NAME%'
