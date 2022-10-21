@@ -3,7 +3,7 @@
   <general>
     <name>%INSTALL_POLICY_NAME%</name>
     <enabled>true</enabled>
-    <trigger_other>install-audacity</trigger_other>
+    <trigger_other>%INSTALL_TRIGGER%</trigger_other>
     <frequency>Ongoing</frequency>
     <category>
       <name>%INSTALL_POLICY_CATEGORY%</name>

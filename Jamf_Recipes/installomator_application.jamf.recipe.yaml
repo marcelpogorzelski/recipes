@@ -21,7 +21,8 @@ Input:
   INSTALLOMATOR_BLOCK: 'tell_user'
   INSTALLOMATOR_REOPEN: 'yes'
   INSTALLOMATOR_DIALOG: '/var/tmp/uit_self_service_dialog.log'
-  INSTALL_POLICY_TEMPLATE: 'standard_install_policy_template.xml'
+  INSTALL_POLICY_TEMPLATE: 'install_policy_template.xml'
+  INSTALL_TRIGGER: 'install-googlechrome'
 
 Process:
 - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
