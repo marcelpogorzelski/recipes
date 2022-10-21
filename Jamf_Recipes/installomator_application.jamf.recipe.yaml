@@ -2,9 +2,10 @@ Identifier: no.uit.jamf.installomator_application
 MinimumVersion: '2.3'
 
 Input:
-  NAME: 'Google Chrome'
+  NAME: 'HandBrake'
   APPLICATION_NAME: '%NAME%.app'
   PATCH_NAME: '%NAME%'
+  ICON_PATH: 'icons/handbrake.png'
   GROUP_NAME_PREFIX: 'Installomator - %NAME% -'
   INSTALLOMATOR_INSTALLED_GROUP_NAME: '%GROUP_NAME_PREFIX% Installed'
   INSTALLOMATOR_INSTALLED_GROUP_TEMPLATE: 'installomator_installed_group_template.xml'
@@ -16,18 +17,24 @@ Input:
   INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_TEMPLATE: 'installomator_out_of_date_scope_group_template.xml'
   INSTALL_POLICY_NAME: '%NAME% Install'
   INSTALL_POLICY_CATEGORY: 'Installers'
-  INSTALLOMATOR_LABEL: 'googlechromepkg'
+  INSTALLOMATOR_LABEL: 'handbrake'
   INSTALLOMATOR_NOTIFY: 'silent'
   INSTALLOMATOR_BLOCK: 'tell_user'
   INSTALLOMATOR_REOPEN: 'yes'
   INSTALLOMATOR_DIALOG: '/var/tmp/uit_self_service_dialog.log'
   INSTALL_POLICY_TEMPLATE: 'install_policy_template.xml'
-  INSTALL_TRIGGER: 'install-googlechrome'
+  INSTALL_TRIGGER: 'install-handbrake'
+  SS_INSTALL_POLICY_NAME: '%NAME% Install - Self Service'
+  DESCRIPTION: 'HandBrake is a open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs.'
 
 Process:
 - Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader
   Arguments:
     category_name: '%INSTALL_POLICY_CATEGORY%'
+  
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfIconUploader
+  Arguments:
+    icon_file: '%ICON_PATH%'
 
 - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
   Arguments:
