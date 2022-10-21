@@ -22,9 +22,6 @@
     <install_button_text>Install</install_button_text>
     <reinstall_button_text>Install</reinstall_button_text>
     <self_service_description>%DESCRIPTION%</self_service_description>
-    <self_service_icon>
-        <uri>%selfservice_icon_uri%</uri>
-    </self_service_icon>
   </self_service>
   <package_configuration>
     <packages>
