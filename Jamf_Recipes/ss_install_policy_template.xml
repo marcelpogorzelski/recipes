@@ -61,7 +61,7 @@
     </script>
     <script>
       <name>Policy run with Trigger</name>
-      <priority>After</priority>
+      <priority>Before</priority>
       <parameter4>%INSTALL_TRIGGER%</parameter4>
       <parameter5>false</parameter5>
       <parameter6/>
