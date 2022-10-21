@@ -16,7 +16,7 @@ Input:
   INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_NAME: '%GROUP_NAME_PREFIX% Out of date - Scope'
   INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_TEMPLATE: 'installomator_out_of_date_scope_group_template.xml'
   INSTALL_POLICY_NAME: '%NAME% Install'
-  INSTALL_POLICY_CATEGORY: 'Installers'
+  INSTALL_POLICY_CATEGORY: 'Testing'
   INSTALLOMATOR_LABEL: 'handbrake'
   INSTALLOMATOR_NOTIFY: 'silent'
   INSTALLOMATOR_BLOCK: 'tell_user'
@@ -25,12 +25,18 @@ Input:
   INSTALL_POLICY_TEMPLATE: 'install_policy_template.xml'
   INSTALL_TRIGGER: 'install-handbrake'
   SS_INSTALL_POLICY_NAME: '%NAME% Install - Self Service'
+  SS_INSTALL_POLICY_CATEGORY: 'Testing'
   DESCRIPTION: 'HandBrake is a open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs.'
+  SS_INSTALL_POLICY_TEMPLATE: 'ss_install_policy_template.xml'
 
 Process:
 - Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader
   Arguments:
     category_name: '%INSTALL_POLICY_CATEGORY%'
+
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader
+  Arguments:
+    category_name: '%SS_INSTALL_POLICY_CATEGORY%'
   
 - Processor: com.github.grahampugh.jamf-upload.processors/JamfIconUploader
   Arguments:
@@ -60,3 +66,8 @@ Process:
   Arguments:
     policy_template: '%INSTALL_POLICY_TEMPLATE%'
     policy_name: '%INSTALL_POLICY_NAME%'
+
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader
+  Arguments:
+    policy_template: '%SS_INSTALL_POLICY_TEMPLATE%'
+    policy_name: '%SS_INSTALL_POLICY_NAME%'

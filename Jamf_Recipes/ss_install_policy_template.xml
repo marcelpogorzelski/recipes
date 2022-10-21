@@ -5,7 +5,7 @@
     <enabled>true</enabled>
     <frequency>Ongoing</frequency>
     <category>
-      <name>Testing</name>
+      <name>%SS_INSTALL_POLICY_CATEGORY%</name>
     </category>
   </general>
   <scope>
