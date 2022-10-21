@@ -25,6 +25,10 @@ Input:
   INSTALL_TRIGGER: 'install-googlechrome'
 
 Process:
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader
+  Arguments:
+    category_name: '%INSTALL_POLICY_CATEGORY%'
+
 - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
   Arguments:
     computergroup_template: '%INSTALLOMATOR_INSTALLED_GROUP_TEMPLATE%'
