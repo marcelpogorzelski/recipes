@@ -22,6 +22,11 @@
     <install_button_text>Install</install_button_text>
     <reinstall_button_text>Install</reinstall_button_text>
     <self_service_description>%DESCRIPTION%</self_service_description>
+    <self_service_icon>
+      <id>%ICON_ID%</id>
+      <filename>%ICON_NAME%</filename>
+      <uri>%ICON_URI%</uri>
+    </self_service_icon>
   </self_service>
   <package_configuration>
     <packages>
@@ -35,7 +40,7 @@
       <priority>Before</priority>
       <parameter4>%INSTALLOMATOR_DIALOG%</parameter4>
       <parameter5>Installing %NAME%...</parameter5>
-      <parameter6>%selfservice_icon_uri%</parameter6>
+      <parameter6>%ICON_URI%</parameter6>
       <parameter7/>
       <parameter8/>
       <parameter9/>

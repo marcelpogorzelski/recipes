@@ -5,7 +5,9 @@ Input:
   NAME: 'HandBrake'
   APPLICATION_NAME: '%NAME%.app'
   PATCH_NAME: '%NAME%'
-  ICON_PATH: 'icons/handbrake.png'
+  ICON_NAME: 'icons/handbrake.png'
+  ICON_URI: 'https://ics.services.jamfcloud.com/icon/hash_48f26aa4e2263e1abc6d27a6b1ae20fc84c6e61d34fceb48ff856dbca73a7312'
+  ICON_ID: '4528'
   GROUP_NAME_PREFIX: 'Installomator - %NAME% -'
   INSTALLOMATOR_INSTALLED_GROUP_NAME: '%GROUP_NAME_PREFIX% Installed'
   INSTALLOMATOR_INSTALLED_GROUP_TEMPLATE: 'installomator_installed_group_template.xml'
@@ -38,10 +40,6 @@ Process:
   Arguments:
     category_name: '%SS_INSTALL_POLICY_CATEGORY%'
 
-- Processor: com.github.grahampugh.jamf-upload.processors/JamfIconUploader
-  Arguments:
-    icon_file: '%ICON_PATH%'
-
 - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
   Arguments:
     computergroup_template: '%INSTALLOMATOR_INSTALLED_GROUP_TEMPLATE%'
@@ -71,4 +69,3 @@ Process:
   Arguments:
     policy_template: '%SS_INSTALL_POLICY_TEMPLATE%'
     policy_name: '%SS_INSTALL_POLICY_NAME%'
-    icon: '%ICON_PATH%'
