@@ -14,7 +14,13 @@ Input:
   INSTALLOMATOR_OUT_OF_DATE_GROUP_TEMPLATE: 'installomator_out_of_date_group_template.xml'
   INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_NAME: '%GROUP_NAME_PREFIX% Out of date - Scope'
   INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_TEMPLATE: 'installomator_out_of_date_scope_group_template.xml'
-  
+  INSTALL_POLICY_NAME: '%NAME% Install'
+  INSTALL_POLICY_CATEGORY: 'Installers'
+  INSTALLOMATOR_LABEL: 'googlechromepkg'
+  INSTALLOMATOR_NOTIFY: 'silent'
+  INSTALLOMATOR_REOPEN: 'yes'
+  INSTALLOMATOR_DIALOG: '/var/tmp/uit_self_service_dialog.log'
+  INSTALL_POLICY_TEMPLATE: 'standard_install_policy_template.xml'
 
 Process:
 - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
@@ -36,3 +42,8 @@ Process:
   Arguments:
     computergroup_template: '%INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_TEMPLATE%'
     computergroup_name: '%INSTALLOMATOR_OUT_OF_DATE_SCOPE_GROUP_NAME%'
+
+- Processor: com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader
+  Arguments:
+    policy_template: '%INSTALL_POLICY_TEMPLATE%'
+    policy_name: '%INSTALL_POLICY_NAME%'
