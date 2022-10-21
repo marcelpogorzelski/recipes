@@ -71,4 +71,4 @@ Process:
   Arguments:
     policy_template: '%SS_INSTALL_POLICY_TEMPLATE%'
     policy_name: '%SS_INSTALL_POLICY_NAME%'
-    policy_icon_path: '%ICON_PATH%'
+    icon: '%ICON_PATH%'
