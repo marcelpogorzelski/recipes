@@ -28,13 +28,13 @@
   <scripts>
     <size>1</size>
     <script>
-      <name>Installomator</name>
+      <name>Installomator TEST</name>
       <priority>Before</priority>
       <parameter4>%INSTALLOMATOR_LABEL%</parameter4>
       <parameter5>NOTIFY=%INSTALLOMATOR_NOTIFY%</parameter5>
-      <parameter6>REOPEN=%INSTALLOMATOR_REOPEN%</parameter6>
-      <parameter7>DIALOG_CMD_FILE=%INSTALLOMATOR_DIALOG%</parameter7>
-      <parameter8/>
+      <parameter6>BLOCKING_PROCESS_ACTION=%INSTALLOMATOR_BLOCK%</parameter6>
+      <parameter7>REOPEN=%INSTALLOMATOR_REOPEN%</parameter7>
+      <parameter8>DIALOG_CMD_FILE=%INSTALLOMATOR_DIALOG%</parameter8>
       <parameter9/>
       <parameter10/>
       <parameter11/>

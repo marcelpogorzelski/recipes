@@ -18,6 +18,7 @@ Input:
   INSTALL_POLICY_CATEGORY: 'Installers'
   INSTALLOMATOR_LABEL: 'googlechromepkg'
   INSTALLOMATOR_NOTIFY: 'silent'
+  INSTALLOMATOR_BLOCK: 'tell_user'
   INSTALLOMATOR_REOPEN: 'yes'
   INSTALLOMATOR_DIALOG: '/var/tmp/uit_self_service_dialog.log'
   INSTALL_POLICY_TEMPLATE: 'standard_install_policy_template.xml'
