@@ -37,10 +37,6 @@ Process:
 - Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader
   Arguments:
     category_name: '%SS_INSTALL_POLICY_CATEGORY%'
-  
-- Processor: com.github.grahampugh.jamf-upload.processors/JamfIconUploader
-  Arguments:
-    icon_file: '%ICON_PATH%'
 
 - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
   Arguments:
