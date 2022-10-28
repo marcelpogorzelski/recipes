@@ -1,0 +1,10 @@
+Identifier: no.uit.jamf.upload_icon
+MinimumVersion: "2.3"
+
+Input:
+  ICON_NAME: "icons/handbrake.png"
+
+Process:
+  - Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader
+    Arguments:
+      icon_file: "%ICON_NAME%"
