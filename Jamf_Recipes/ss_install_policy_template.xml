@@ -24,7 +24,6 @@
     <self_service_description>%DESCRIPTION%</self_service_description>
     <self_service_icon>
       <id>%ICON_ID%</id>
-      <filename>%ICON_NAME%</filename>
       <uri>%ICON_URI%</uri>
     </self_service_icon>
   </self_service>
