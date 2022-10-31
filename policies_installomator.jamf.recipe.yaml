@@ -27,7 +27,7 @@ Input:
   SS_UNINSTALL_POLICY_TEMPLATE: "ss_uninstall_policy_template.xml"
   UNINSTALL_TRIGGER: "uninstall-handbrake"
   REMOVE_SCRIPT: "Remove Application"
-  APPLICATION_RECEIPT: ""
+  APPLICATION_RECEIPT: "<parameter5/>"
 
 Process:
   - Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader

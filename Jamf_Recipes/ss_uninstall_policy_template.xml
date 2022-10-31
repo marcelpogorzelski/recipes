@@ -39,7 +39,7 @@
             <name>%REMOVE_SCRIPT%</name>
             <priority>After</priority>
             <parameter4>%APPLICATION_NAME%</parameter4>
-            <parameter5>%APPLICATION_RECEIPT%</parameter5>
+            %APPLICATION_RECEIPT%
             <parameter6/>
             <parameter7/>
             <parameter8/>
