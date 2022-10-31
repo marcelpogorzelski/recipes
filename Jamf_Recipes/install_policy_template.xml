@@ -28,7 +28,7 @@
   <scripts>
     <size>1</size>
     <script>
-      <name>Installomator TEST</name>
+      <name>%INSTALLOMATOR_SCRIPT%</name>
       <priority>Before</priority>
       <parameter4>%INSTALLOMATOR_LABEL%</parameter4>
       <parameter5>NOTIFY=%INSTALLOMATOR_NOTIFY%</parameter5>

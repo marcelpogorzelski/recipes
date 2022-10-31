@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <computer_group>
-  <name>%INSTALLOMATOR_NOT_INSTALLED_GROUP_NAME%</name>
+  <name>%INSTALLED_GROUP_NAME%</name>
   <is_smart>true</is_smart>
   <criteria>
     <criterion>
       <name>Application Title</name>
       <priority>0</priority>
       <and_or>and</and_or>
-      <search_type>is not</search_type>
+      <search_type>is</search_type>
       <value>%APPLICATION_NAME%</value>
       <opening_paren>false</opening_paren>
       <closing_paren>false</closing_paren>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<policy>
+    <general>
+        <name>%SS_UNINSTALL_POLICY_NAME%</name>
+        <enabled>true</enabled>
+        <trigger_other>%UNINSTALL_TRIGGER%</trigger_other>
+        <frequency>Ongoing</frequency>
+        <category>
+            <name>%SS_UNINSTALL_POLICY_CATEGORY%</name>
+        </category>
+    </general>
+    <scope>
+        <computers/>
+        <computer_groups>
+            <computer_group>
+                <name>macOS Drift test macs</name>
+            </computer_group>
+        </computer_groups>
+    </scope>
+    <self_service>
+        <use_for_self_service>true</use_for_self_service>
+        <self_service_display_name>%NAME%</self_service_display_name>
+        <install_button_text>Remove</install_button_text>
+        <reinstall_button_text>Remove</reinstall_button_text>
+        <self_service_description>%UNINSTALL_DESCRIPTION%</self_service_description>
+        <self_service_icon>
+            <id>%ICON_ID%</id>
+            <uri>%ICON_URI%</uri>
+        </self_service_icon>
+    </self_service>
+    <package_configuration>
+        <packages>
+            <size>0</size>
+        </packages>
+    </package_configuration>
+    <scripts>
+        <size>1</size>
+        <script>
+            <name>%REMOVE_SCRIPT%</name>
+            <priority>After</priority>
+            <parameter4>%APPLICATION_NAME%</parameter4>
+            <parameter5>%APPLICATION_RECEIPT%</parameter5>
+            <parameter6/>
+            <parameter7/>
+            <parameter8/>
+            <parameter9/>
+            <parameter10/>
+            <parameter11/>
+        </script>
+    </scripts>
+    <maintenance>
+        <recon>true</recon>
+    </maintenance>
+</policy>

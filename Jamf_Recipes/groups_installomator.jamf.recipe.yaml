@@ -1,0 +1,37 @@
+Identifier: no.uit.jamf.groups_installomator
+MinimumVersion: "2.3"
+
+Input:
+  NAME: "HandBrake"
+  APPLICATION_NAME: "%NAME%.app"
+  PATCH_NAME: "%NAME%"
+  GROUP_NAME_PREFIX: "Installomator - %NAME% -"
+  INSTALLED_GROUP_NAME: "%GROUP_NAME_PREFIX% Installed"
+  INSTALLED_GROUP_TEMPLATE: "installed_group_installomator_template.xml"
+  NOT_INSTALLED_GROUP_NAME: "%GROUP_NAME_PREFIX% Not Installed"
+  NOT_INSTALLED_GROUP_TEMPLATE: "not_installed_group_installomator_template.xml"
+  OUT_OF_DATE_GROUP_NAME: "%GROUP_NAME_PREFIX% Out of date"
+  OUT_OF_DATE_GROUP_TEMPLATE: "out_of_date_group_installomator_template.xml"
+  OUT_OF_DATE_SCOPE_GROUP_NAME: "%GROUP_NAME_PREFIX% Out of date - Scope"
+  OUT_OF_DATE_SCOPE_GROUP_TEMPLATE: "out_of_date_scope_group_installomator_template.xml"
+
+Process:
+  - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
+    Arguments:
+      computergroup_template: "%INSTALLED_GROUP_TEMPLATE%"
+      computergroup_name: "%INSTALLED_GROUP_NAME%"
+
+  - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
+    Arguments:
+      computergroup_template: "%NOT_INSTALLED_GROUP_TEMPLATE%"
+      computergroup_name: "%NOT_INSTALLED_GROUP_NAME%"
+
+  - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
+    Arguments:
+      computergroup_template: "%OUT_OF_DATE_GROUP_TEMPLATE%"
+      computergroup_name: "%OUT_OF_DATE_GROUP_NAME%"
+
+  - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
+    Arguments:
+      computergroup_template: "%OUT_OF_DATE_SCOPE_GROUP_TEMPLATE%"
+      computergroup_name: "%OUT_OF_DATE_SCOPE_GROUP_NAME%"
