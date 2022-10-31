@@ -20,14 +20,14 @@ Input:
   SS_INSTALL_POLICY_CATEGORY: "Testing"
   DESCRIPTION: "**HandBrake** is a open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs."
   SS_INSTALL_POLICY_TEMPLATE: "ss_install_policy_template.xml"
-  #FIX!!!
   SS_UNINSTALL_POLICY_NAME: "%NAME% Uninstall - Self Service"
   SS_UNINSTALL_POLICY_CATEGORY: "Testing"
   UNINSTALL_DESCRIPTION: "Removes **%NAME%**"
   SS_UNINSTALL_POLICY_TEMPLATE: "ss_uninstall_policy_template.xml"
   UNINSTALL_TRIGGER: "uninstall-handbrake"
   REMOVE_SCRIPT: "Remove Application"
-  APPLICATION_RECEIPT: "<parameter5/>"
+  REMOVE_APPLICATION_NAME: "%NAME%"
+  REMOVE_APPLICATION_RECEIPT: "<parameter5/>"
 
 Process:
   - Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader
