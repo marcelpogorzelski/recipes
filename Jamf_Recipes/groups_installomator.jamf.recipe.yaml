@@ -2,7 +2,7 @@ Identifier: no.uit.jamf.groups_installomator
 MinimumVersion: "2.3"
 
 Input:
-  NAME: "HandBrake"
+  NAME: "SETNAME"
   APPLICATION_NAME: "%NAME%.app"
   PATCH_NAME: "%NAME%"
   GROUP_NAME_PREFIX: "Installomator - %NAME% -"
