@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <policy>
     <general>
-        <name>%SS_INSTALL_POLICY_NAME%</name>
+        <name>%SS_UPDATE_POLICY_NAME%</name>
         <enabled>true</enabled>
         <frequency>Ongoing</frequency>
         <category>
-            <name>%SS_INSTALL_POLICY_CATEGORY%</name>
+            <name>%SS_UPDATE_POLICY_CATEGORY%</name>
         </category>
     </general>
     <scope>
         <computers/>
         <computer_groups>
             <computer_group>
-                <name>macOS Drift test macs</name>
+                <name>%OUT_OF_DATE_SCOPE_GROUP_NAME%</name>
             </computer_group>
         </computer_groups>
     </scope>
     <self_service>
         <use_for_self_service>true</use_for_self_service>
         <self_service_display_name>%NAME%</self_service_display_name>
-        <install_button_text>Install</install_button_text>
-        <reinstall_button_text>Install</reinstall_button_text>
+        <install_button_text>Update</install_button_text>
+        <reinstall_button_text>Update</reinstall_button_text>
         <self_service_description>%DESCRIPTION%</self_service_description>
         <self_service_icon>
             <id>%ICON_ID%</id>
@@ -33,25 +33,13 @@
         </packages>
     </package_configuration>
     <scripts>
-        <size>4</size>
+        <size>3</size>
         <script>
             <name>00_Prepare_SwiftDialog.sh</name>
             <priority>Before</priority>
             <parameter4>%INSTALLOMATOR_DIALOG%</parameter4>
-            <parameter5>Installing %NAME%...</parameter5>
+            <parameter5>Updating %NAME%...</parameter5>
             <parameter6>%ICON_URI%</parameter6>
-            <parameter7/>
-            <parameter8/>
-            <parameter9/>
-            <parameter10/>
-            <parameter11/>
-        </script>
-        <script>
-            <name>Dock Add App to end SwiftTest</name>
-            <priority>After</priority>
-            <parameter4>%NAME%</parameter4>
-            <parameter5>%INSTALLOMATOR_DIALOG%</parameter5>
-            <parameter6/>
             <parameter7/>
             <parameter8/>
             <parameter9/>

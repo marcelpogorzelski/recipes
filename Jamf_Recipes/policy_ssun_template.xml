@@ -13,7 +13,7 @@
         <computers/>
         <computer_groups>
             <computer_group>
-                <name>macOS Drift test macs</name>
+                <name>%INSTALLED_GROUP_NAME%</name>
             </computer_group>
         </computer_groups>
     </scope>
