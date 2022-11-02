@@ -25,13 +25,13 @@ Process:
 
   - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
     Arguments:
-      computergroup_template: "%PROVISIONED_GROUP_TEMPLATE%"
-      computergroup_name: "%PROVISIONED_GROUP_NAME%"
+      computergroup_template: "%NOT_INSTALLED_GROUP_TEMPLATE%"
+      computergroup_name: "%NOT_INSTALLED_GROUP_NAME%"
 
   - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
     Arguments:
-      computergroup_template: "%NOT_INSTALLED_GROUP_TEMPLATE%"
-      computergroup_name: "%NOT_INSTALLED_GROUP_NAME%"
+      computergroup_template: "%PROVISIONED_GROUP_TEMPLATE%"
+      computergroup_name: "%PROVISIONED_GROUP_NAME%"
 
   - Processor: com.github.grahampugh.jamf-upload.processors/JamfComputerGroupUploader
     Arguments:
