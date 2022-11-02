@@ -45,6 +45,10 @@ Process:
     Arguments:
       category_name: "%SS_UNINSTALL_POLICY_CATEGORY%"
 
+  - Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader
+    Arguments:
+      category_name: "%SS_UPDATE_POLICY_CATEGORY%"
+
   - Processor: com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader
     Arguments:
       policy_template: "%INSTALL_POLICY_TEMPLATE%"
